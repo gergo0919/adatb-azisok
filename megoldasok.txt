@@ -1,0 +1,5 @@
+SELECT SZALLAS_NEV,COUNT(*)
+FROM szallashely
+JOIN szallashely szh ON Szoba.SZALLAS_FK=szallashely.SZALLAS_ID
+JOIN Szoba sz ON Foglalas.SZOBA_FK=Szoba.SZOBA_ID
+GROUP by SZALLAS_NEV;
